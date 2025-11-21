@@ -14,7 +14,7 @@ export const auth = async (req, res, next) => {
     if (!user) return res.status(404).json({ msg: "User not found" });
 
     req.user = user;
-    req.userId = user._id;   // <-- IMPORTANT FIX
+    req.userId = user._id; 
 
     next();
   } catch (err) {

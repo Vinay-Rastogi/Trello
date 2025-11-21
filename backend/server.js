@@ -11,7 +11,17 @@ import cardRoutes from "./src/routes/cardRoutes.js";
 dotenv.config();
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "https://dazzling-bombolone-d66387.netlify.app",  
+      "http://localhost:5173"                           
+    ],
+    methods: "GET,POST,PUT,DELETE",
+    allowedHeaders: "Content-Type, Authorization",
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 connectDB();
