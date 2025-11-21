@@ -1,0 +1,21 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+/* Smooth background gradient for auth pages */
+.auth-bg {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #a3bffa, #c084fc, #f9a8d4);
+  background-size: cover;
+}

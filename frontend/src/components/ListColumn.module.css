@@ -1,0 +1,46 @@
+.list {
+  background: #ebecf0;
+  width: 260px;
+  padding: 14px;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 20px;
+  margin-bottom: 12px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+.addBtn {
+  width: 100%;
+  padding: 8px;
+  background: #6a5acd;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
