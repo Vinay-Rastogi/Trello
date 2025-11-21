@@ -9,11 +9,9 @@ import ProtectedRoute from "./components/ProtectedRoute";
 const App = () =>{
   return (
     <Routes>
-      {/* Public Routes */}
       <Route path="/" element={<Login />} />
       <Route path="/register" element={<Register />} />
 
-      {/* Protected Routes */}
       <Route
         path="/dashboard"
         element={

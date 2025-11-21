@@ -37,10 +37,10 @@ const ListColumn = ({ list, index, cards, setCards, setLists }) => {
   try {
     await API.delete(`/lists/${list._id}`);
 
-    // Update UI: remove list
+    // remove list
     setLists((prev) => prev.filter((l) => l._id !== list._id));
 
-    // Update UI: remove associated cards
+    //remove associated cards
     setCards((prev) => {
       const updated = { ...prev };
       delete updated[list._id];

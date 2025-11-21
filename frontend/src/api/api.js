@@ -1,11 +1,10 @@
-// api/api.js
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://trello-bjux.onrender.com/api",
 });
 
-// Attach token on each request
+
 API.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
   if (token) {
